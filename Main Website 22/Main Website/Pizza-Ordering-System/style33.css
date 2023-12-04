@@ -1,0 +1,59 @@
+
+
+h1 {
+    text-align: center;
+    background-color: gainsboro;
+    text-size-adjust: 100px;
+}
+
+.container {
+    width: 300px;
+    padding: 16px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-left: auto;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container form label {
+    display: block;
+    margin-top: 20px;
+}
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+}
+
+body {
+    background-image: url(images/licensed-image.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ .container form input[type="submit"]{
+    background-color: #04AA6D;
+    text-align: center;
+    padding-right: 70%;
+ }

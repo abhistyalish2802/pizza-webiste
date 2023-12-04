@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Online Pizza Ordering System</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="checkout.css">
+
+</head>
+<body>
+  <nav>
+    <button class="return back" onclick="goBack()">Back >></button>
+  </nav>
+
+  
+    <div class="cart" id="shopping-cart">
+  <h2>Shopping Cart</h2>
+  <li id="cart-items">
+  </li>
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <button class="checkout-btn" onclick="checkout()">Checkout</button>
+  
+  </div>
+
+  <script src="js/script.js"></script>
+  
+    
+  </body>
+</html>
