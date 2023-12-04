@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Online Pizza Ordering System</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="image/x-icon" href="images/pizza.png">
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Pizza Ordering System</a>
+
+      <nav class="navbar">
+         <a href="index.html">Home</a>
+         <a href="about.html">Contact</a>
+         <a href="menu.html">Menu</a>   
+         <a href="faq.html">FAQ</a>
+         <a href="login.html">Logout</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" style="display: inline-flex;" >
+            <a href="checkout.html"  class="fas fa-shopping-cart"></a>
+        </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>
+            pizza is always the answer.
+           </p>
+           <p>
+            less drama — more pizza.
+           </p>
+           <p>
+            the party can't start without pizza.
+           </p>
+           <p>
+            say yes to pizza.
+           </p>
+      </div>
+
+    
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> Past Orders </h3>
+
+      <div class="box">
+         <p>Placed on : <span>06/04/2023</span> </p>
+         <p>Name : <span>Prabhkirat Singh</span> </p>
+         <p>number : <span>0224522458</span></p>
+         <p>address : <span>77 KITCHENER ROAD AUCKLAND</span></p>
+         <p>Payment method : <span>Cash on delivery</span></p>
+         <p>your orders : <span>Supreme Pizza $2/- x 2, Veggie Pizza $2/- x 1, Buffalo Pizza $4/- x 4, BBQ Chicken Pizza, $3/- x 1</span></p>
+         <p>total price : <span>$11/-</span></p>
+         <p>payment status : <span style="color: var(--red);">Confirmed</span> </p>
+      </div>
+
+      <div class="box">
+         <p>placed on : <span>06/04/2022</span> </p>
+         <p>name : <span>Abhishek Zaildar</span> </p>
+         <p>number : <span>12-345-6789/span></p>
+         <p>address : <span>129 Mt Roskill 1041 Auckland</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span>Supreme Pizza $2/- x 2, Veggie Pizza $2/- x 1, Buffalo Pizza $4/- x 4, BBQ Chicken Pizza, $3/- x 1</span></p>
+         <p>total price : <span>$11/-</span></p>
+         <p>payment status : <span style="color: var(--red);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>close</span></div>
+      <a href="menu.html" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/bgimg1.jpg" alt="" height="200rem" width="200rem">>
+            </div>
+            <div class="content">
+               <h3>Neapolitan pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/bgimg2.jpg" alt=""height="200rem" width="200rem">>
+            </div>
+            <div class="content">
+               <h3>Homemade Greek pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/bgimg3.jpg" alt="" height="200rem" width="200rem">
+            </div>
+            <div class="content">
+               <h3>Homemade feta  Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about1.jpg" alt="">
+         <h3>Enjoy your day</h3>
+         <p>Satisfy your cravings with our pizza ordering service. Explore a diverse menu, experience swift delivery, and relish the flavors crafted with care. Your perfect pizza awaits – order now!</p>
+         <a href="menu.html" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about2.jpg" alt="">
+         <h3>30 minutes delivery</h3>
+         <p> Experience the convenience of our 30-minute delivery service. Quick, reliable, and efficient – we prioritize getting your order to your doorstep within half an hour. Enjoy your meal promptly!</p>
+         <a href="menu.html" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about3.jpg" alt="">
+         <h3>share with freinds</h3>
+         <p>Share the joy of delicious pizza with friends. Our pizzas are crafted to perfection, making every bite a delightful experience. Spread the love, laughter, and great taste among your friends!</p>
+         <a href="menu.html" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

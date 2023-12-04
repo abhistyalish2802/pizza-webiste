@@ -1,0 +1,32 @@
+
+body{
+    background-image: url(images/lastthanks.jpeg);
+    background-attachment: fixed;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: auto;
+}
+.cart {
+    position:absolute;
+   bottom: 50%;
+   
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+ }
+
+ .checkout-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+ }
+
+ .checkout-btn:hover {
+    background-color: #555;
+ }

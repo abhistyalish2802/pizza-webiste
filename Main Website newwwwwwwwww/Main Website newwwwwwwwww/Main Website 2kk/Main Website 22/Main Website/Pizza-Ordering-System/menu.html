@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Online Pizza Ordering System</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="icon" type="image/x-icon" href="images/pizza.png">
+
+</head>
+<body>
+  
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">Pizza Ordering System</a>
+
+      <nav class="navbar">
+         <a href="index.html">Home</a>
+         <a href="about.html">Contact</a>
+         <a href="menu.html">Menu</a>   
+         <a href="faq.html">FAQ</a>
+         <a href="login.html">Logout</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+
+         <div id="cart-btn" style="display: inline-flex;" >
+            <a href="checkout.html"  class="fas fa-shopping-cart"></a>
+        </div>
+        
+         
+      </div>
+
+   </section>
+
+</header>
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are logged in now!</span></p>
+      </div>
+       <div class="display-orders">
+        <p>
+         pizza is always the answer.
+        </p>
+        <p>
+         less drama — more pizza.
+        </p>
+        <p>
+         the party can't start without pizza.
+        </p>
+        <p>
+         say yes to pizza.
+        </p>
+      </div>
+
+    
+   </section>
+
+</div>
+<section id="menu" class="menu">
+   <h1 class="heading">Our Menu</h1>
+   <div class="box-container">
+       <div class="box">
+        
+         <img src="images/Veggie Pizza.jpg" alt="">
+           <div class="name">Veggie Pizza</div>
+           <form method="checkout.html" method="post" id="addToCartForm" data-item-name="Veggie Pizza" data-price-id="price1" data-quantity-id="quantity1" data-size-id="size1">
+            <select name="size" id="size">
+               <option value="none" data-price="-">Select Size</option>
+               <option value="small" data-price=" 14 ">Small</option>
+               <option value="medium" data-price=" 17">Medium</option>
+               <option value="large" data-price=" 18 ">Large</option>
+           </select>
+
+          <div class="price" id="pizzaPrice" >$<span>-</span>/-</div>
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn" onclick="addToCart('Veggie Pizza', 'selectedSize', 'selectedPrice')">
+        </form>        
+       </div>
+
+ 
+       <div class="box">
+         
+          <img src="images/Buffalo Pizza.jpg" alt="">
+          <div class="name">Buffalo Pizza</div>
+         
+         
+          <form method ="checkout.html" method="post" id="addToCartForm" data-item-name="Veggie Pizza" data-price-id="price1" data-quantity-id="quantity1" data-size-id="size1">
+            <select name="size" id="size">
+               <option value="none" data-price="-">Select Size</option>
+               <option value="small" data-price=" 16 ">Small</option>
+               <option value="medium" data-price=" 18">Medium</option>
+               <option value="large" data-price=" 19">Large</option>
+           </select>
+
+          <div class="price" id="pizzaPrice" >$<span>-</span>/-</div>
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn"> 
+        </form>        
+       
+       </div>
+ 
+       <div class="box">
+        
+          <img src="images/Supreme Pizza.jpg" alt="">
+          <div class="name">Supreme Pizza</div>
+          <div class="price" id="pizzaPrice" >$<span>-</span>/-</div>          
+          <form method ="checkout.html" method="post" id="addToCartForm" data-item-name="Veggie Pizza" data-price-id="price1" data-quantity-id="quantity1" data-size-id="size1">
+            <select name="size">
+               <option value="none" data-price="-">Select Size</option>
+               <option value="small" data-price=" 11 ">Small</option>
+               <option value="medium" data-price=" 15">Medium</option>
+               <option value="large" data-price=" 19">Large</option>
+            </select>
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+         <div class="price" id="pizzaPrice" >$<span>-</span>/-</div>          <img src="images/BBQ Chicken Pizza.jpg" alt="">
+          <div class="name">BBQ Chicken Pizza</div>
+          <form action="" method="post" id="addToCartForm">
+            <select name="size">
+            <option value="none" data-price="-">Select Size</option>
+               <option value="small" data-price=" 18 ">Small</option>
+               <option value="medium" data-price=" 27">Medium</option>
+               <option value="large" data-price=" 39">Large</option>
+            </select>
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+       </div>
+ 
+       <div class="box">
+         <div class="price" id="pizzaPrice" >$<span>-</span>/-</div>          <img src="images/Pepperoni Pizza.jpg" alt="">
+          <div class="name">Pepperoni Pizza</div>
+          <form action="" method="post">
+            <select name="size">
+               <option value="none" data-price="-">Select Size</option>
+               <option value="small" data-price=" 21">Small</option>
+               <option value="medium" data-price=" 22">Medium</option>
+               <option value="large" data-price=" 27">Large</option>
+            </select>
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+         <div class="price" id="pizzaPrice" >$<span>-</span>/-</div>          <img src="images/Cheesecake.jpg" alt="">
+          <div class="name">New York baked Cheesecake</div>
+          <form action="" method="post">
+            <select name="size">
+               <option value="none" data-price="-">Select Size</option>
+               <option value="small" data-price=" 20 ">Small</option>
+               <option value="medium" data-price=" 25">Medium</option>
+               <option value="large" data-price=" 28">Large</option>
+            </select>
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price" id="pizzaPrice">$<span></span>/-</div>
+          <img src="images/VanillaCheese.jpg" alt="">
+          <div class="name">Vanilla CheeseCake</div>
+          <form action="" method="post">
+            
+            <select name="size">
+               <option value="none" data-price="-">Select Size</option>
+               <option value="small" data-price=" 10 ">Small</option>
+               <option value="medium" data-price=" 12">Medium</option>
+               <option value="large" data-price=" 17">Large</option>
+            </select>
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>109</span>/-</div>
+          <img src="images/imperial-blue1.jpg" alt="">
+          <div class="name">Imperial Blue Whisky</div>
+          
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+          </form>
+       </div>
+ 
+       <div class="box">
+          <div class="price">$<span>55</span>/-</div>
+          <img src="images/amrut.jpg" alt="">
+          <div class="name">Amrut Whisky</div>
+          <form action="" method="post">
+             <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+             <input type="submit" value="add to cart" name="add_to_cart" class="btn"  >
+            
+          </form>
+       </div>
+ 
+    </div>
+ 
+ </section>
+
+<script src="js/script.js"></script>
+<script>
+   document.addEventListener('DOMContentLoaded', function () {
+      // Attach submit event listener to all forms
+      const addToCartForms = document.querySelectorAll('.box form');
+      addToCartForms.forEach(function (form) {
+          form.addEventListener('submit', function (event) {
+              event.preventDefault(); // Prevent the default form submission
+              addToCart(form);
+          });
+      });
+
+      // Attach change event listener to all size select elements
+      const sizeSelects = document.querySelectorAll('.box form select[name="size"]');
+      sizeSelects.forEach(function (sizeSelect) {
+          sizeSelect.addEventListener('change', function () {
+              updatePizzaPrice(this); // Pass the current select element to the function
+          });
+      });
+
+      // Initialize the prices
+      updateAllPizzaPrices();
+
+      // Load cart data from local storage
+      loadCartData();
+   });
+
+   function addToCart(form) {
+      const selectedSize = form.querySelector('select[name="size"]').value;
+      const selectedPizza = form.dataset.itemName;
+      const priceElement = form.querySelector('.price span');
+      let price = 0;
+
+      if (selectedSize !== 'none') {
+          price = parseFloat(form.querySelector(`option[value="${selectedSize}"]`).dataset.price);
+      }
+
+      // Check if the price is a valid number, otherwise set it to "-"
+      if (!isNaN(price)) {
+          priceElement.textContent = price;
+
+          // Add the item to the cart data in local storage
+          addToLocalStorage(selectedPizza, selectedSize, price);
+
+          // Refresh the cart data from local storage
+          loadCartData();
+      } else {
+          priceElement.textContent = '-';
+          alert('Please select a size before adding to cart.');
+      }
+   }
+
+   function updateAllPizzaPrices() {
+      const sizeSelects = document.querySelectorAll('.box form select[name="size"]');
+      sizeSelects.forEach(function (sizeSelect) {
+          updatePizzaPrice(sizeSelect);
+      });
+   }
+
+   function updatePizzaPrice(sizeSelect) {
+      const priceElement = sizeSelect.closest('.box').querySelector('.price span');
+      const selectedSize = sizeSelect.options[sizeSelect.selectedIndex];
+      let price = 0;
+
+      if (selectedSize) {
+          price = parseFloat(selectedSize.dataset.price);
+      }
+
+      // Check if the price is a valid number, otherwise set it to "-"
+      if (!isNaN(price)) {
+          priceElement.textContent = price;
+      } else {
+          priceElement.textContent = '-';
+      }
+   }
+
+</script>
+
+           </body>
+</html>
